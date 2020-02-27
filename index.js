@@ -42,10 +42,11 @@ class Airplane {
 
 class Person {
   constructor(name, age){
-    this.name = name,
-    this.age= age,
+    this.name =name,
+    this.age = age,
     this.stomach=[]
   }
+  
 
 
   
@@ -81,10 +82,10 @@ class Person {
 
 class Car {
   constructor(model, milesPerGallon) {
-    this.model = model,
-      this.milesPerGallon = milesPerGallon,
-      this.tank = 0,
-      this.odometer = 0
+    this.model=model,
+    this.milesPerGallon=milesPerGallon,
+    this.tank=0,
+    this.odometer=0
   }
   fill (gallons) {
     this.tank += gallons;
@@ -96,7 +97,7 @@ class Car {
     if (this.tank < 0) {
       this.odometer -= Math.abs(this.tank) * this.milesPerGallon;
       this.tank = 0;
-      return `I ran out of fuel at ${this.odometer} miles`;
+      return `I ran out of fuel at ${this.odometer} miles`
     }
 }
 }   
@@ -119,7 +120,7 @@ class Lambdasian {
     this.location=attributes.location
   }
   speak(){
-    return `Hello my name is ${this.name},  I am from ${this.location}`
+    return `Hello my name is ${this.name}, I am from ${this.location}`
   }
 
 }
